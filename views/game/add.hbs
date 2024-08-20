@@ -1,0 +1,38 @@
+<div class="container text-center card bg-light col-md-6">
+   <form action="/game/add" method="post">
+      <h1 class="alert alert-warning text-uppercase">Add new game</h1>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Game Title</label>
+         <input class="form-control" type="text" placeholder="Enter game title" name="title" required minlength="5">
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Game Genre</label>
+         <select class="form-control" name="genre">
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Role-playing">Role-playing</option>
+            <option value="Sports">Sports</option>
+            <option value="Strategy">Strategy</option>
+         </select>
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Game Developer</label>
+         <select class="form-control" name="developer">
+            {{#each developers }}
+               <option value="{{_id}}">{{ name }}</option>
+            {{/each}}
+         </select>
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Game Price</label>
+         <input class="form-control" type="number" name="price" placeholder="Enter game price">
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Game Cover</label>
+         <input class="form-control" type="url" name="cover" placeholder="Enter game cover url" required>
+      </div>
+      <div class="form-group mt-3 mb-3">
+         <input class="btn btn-success" type="submit" value="Add">
+      </div>
+   </form>
+</div>

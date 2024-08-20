@@ -1,0 +1,47 @@
+<table class="table table-primary text-center">
+   <thead>
+      <tr>
+         <th colspan="3" class="h1 text-danger">GAME LIST</th>
+         <th>
+            <a href="/game/add" class="btn btn-primary">Add</a>
+         </th>
+      </tr>
+      <tr>
+         <th colspan="2">
+            <form action="/game/search" method="post">
+               <input class="form-control" type="search" name="title"
+               placeholder="Search by title" required>
+            </form>
+         </th>
+         <th colspan="2">
+            <a href="/game/sort/asc" class="btn btn-secondary">Price ASC</a>
+            <a href="/game/sort/desc" class="btn btn-success">Price DESC</a>
+         </th>
+      </tr>
+      <tr>
+         <th>Game Title</th>
+         <th>Game Price</th>
+         <th>Game Cover</th>
+         <th>Menu</th>
+      </tr>
+   </thead>
+   <tbody>
+      {{#each games }}
+      <tr>
+         <td>{{ title }}</td>
+         <td>${{ price }}</td>
+         <td>
+            <a href="/game/detail/{{ _id}}">
+               <img src="{{ cover }}" alt="game cover" width="100" height="120">
+            </a>
+         </td>
+         <td>
+            <a class="btn btn-info" href="/game/detail/{{ _id}}">Detail</a>
+            <a class="btn btn-warning" href="/game/edit/{{ _id}}">Edit</a>
+            <a class="btn btn-danger" href="/game/delete/{{ _id}}"
+               onclick="return confirm('Are you sure to delete this game ?')">Delete</a>
+         </td>
+      </tr>
+      {{/each}}
+   </tbody>
+</table>

@@ -1,0 +1,21 @@
+<div class="container text-center card bg-light col-md-6">
+   <form action="/game/edit/{{ game._id }}" method="post">
+      <h1 class="alert alert-warning text-uppercase">Edit game</h1>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Game Title</label>
+         <input class="form-control" type="text" placeholder="Enter game title" name="title" required minlength="5" value="{{ game.title }}">
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Game Price</label>
+         <input class="form-control" type="number" name="price" placeholder="Enter game price" value="{{ game.price }}">
+      </div>
+      <div class="form-group mt-3">
+         <label class="text text-danger fw-bold">Game Cover</label><br>
+         <img src="{{ game.cover }}" width="100" height="120"><br>
+         <input class="form-control" type="url" name="cover" placeholder="Enter game cover url" required value="{{ game.cover}}">
+      </div>
+      <div class="form-group mt-3 mb-3">
+         <input class="btn btn-success" type="submit" value="Edit">
+      </div>
+   </form>
+</div>

@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f4ff"
+  },
+  "name": "Rockstar Games"
+},
+{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f500"
+  },
+  "name": "RiotGame"
+},
+{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f501"
+  },
+  "name": "Activision Blizzard"
+},
+{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f502"
+  },
+  "name": "Ubisoft"
+},
+{
+  "_id": {
+    "$oid": "66b04b3ea29ec8305b04f503"
+  },
+  "name": "Bethesda Softworks"
+}]

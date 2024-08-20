@@ -1,0 +1,36 @@
+[{
+  "title": "The Last of Us",
+  "genre": "Action-Adventure",
+  "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0719/YScbS4L03wH1ABFZHgvL3NFW.jpg?w=440",
+  "price": 59.99
+},
+{
+  "title": "Grand Theft Auto V",
+  "genre": "Open-World",
+  "cover": "https://genk.mediacdn.vn/qHYx0eDsUHhZXXxDGFrAWJ0bYJgWc/Image/2013/01/gta01-e67a3.jpg",
+  "price": 49.99
+},
+{
+  "title": "The Elder Scrolls V: Skyrim",
+  "genre": "RPG",
+  "cover": "https://i.pinimg.com/originals/36/ae/3d/36ae3d1bb4f66eaf81fea7d3e184e5a1.jpg",
+  "price": 39.99
+},
+{
+  "title": "Minecraft",
+  "genre": "Sandbox",
+  "cover": "https://thumbs.dreamstime.com/b/minecraft-logo-online-game-dirt-block-illustrations-concept-design-isolated-186775550.jpg",
+  "price": 29.99
+},
+{
+  "title": "Valorant",
+  "genre": "First-Person Shooter",
+  "cover": "https://i.pinimg.com/236x/56/36/35/563635cbee52e246228835bd0d9c8d3a.jpg",
+  "price": 69.99
+},
+{
+  "title": "Overwatch",
+  "genre": "Team-Based Shooter",
+  "cover": "https://i.pinimg.com/474x/68/79/fc/6879fc6a14062063de1cf17fb6c083a8.jpg",
+  "price": 49.99
+}]
